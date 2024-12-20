@@ -213,7 +213,7 @@ void InventoryScreen::updateCount(int id, const QString &column, int change, QLa
     label->setText(QString::number(newValue));
 }
 
-void InventoryManager::searchInventory(const QString &query)
+void InventoryScreen::searchInventory(const QString &query)
 {
     QString lowerQuery = query.trimmed().toLower();
     for (QWidget *itemWidget : inventoryWidgets)
@@ -234,7 +234,7 @@ void InventoryManager::searchInventory(const QString &query)
     }
 }
 
-void InventoryManager::editInventoryItem()
+void InventoryScreen::editInventoryItem()
 {
     bool ok;
     QString originalName = QInputDialog::getText(parentWidget,

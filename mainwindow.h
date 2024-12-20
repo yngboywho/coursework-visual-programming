@@ -10,6 +10,8 @@
 #include <QSqlError>
 #include "employeemanage.h"
 #include "clientmanage.h"
+#include "inventoryscreen.h"
+#include "tovarmanage.h"
 
 QT_BEGIN_NAMESPACE
 
@@ -35,10 +37,10 @@ private slots:
 private:
     Ui::MainWindow *ui;
     QMap<QString, QWidget*> employeeWidgets;
-    EmployeeManage *employeeManager;
-    InventoryManager *inventoryManager;
-    ProductManager *productManager;
-    ClientManage *clientManager;
+    EmployeeManage *employeeManage;
+    InventoryScreen *inventoryScreen;
+    TovarManage *tovarManager;
+    ClientManage *clientManage;
 
 };
 #endif // MAINWINDOW_H

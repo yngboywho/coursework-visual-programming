@@ -14,16 +14,14 @@ SOURCES += \
     inventoryscreen.cpp \
     loginwindow.cpp \
     main.cpp \
-    mainwindow.cpp \
-    tovarmanage.cpp
+    mainwindow.cpp
 
 HEADERS += \
     clientmanage.h \
     employeemanage.h \
     inventoryscreen.h \
     loginwindow.h \
-    mainwindow.h \
-    tovarmanage.h
+    mainwindow.h
 
 FORMS += \
     loginwindow.ui \
